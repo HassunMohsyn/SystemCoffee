@@ -1,0 +1,337 @@
+@import url('https://fonts.cdnfonts.com/css/vintage-wheel-free-trial');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Bebas Neue", sans-serif;
+    user-select: none;
+
+    /* font-family: 'Vintage Wheel Free Trial', sans-serif; */
+}
+
+:root {
+    --color-first-: #ece0d1 ;
+    --color-second-: #dbc1ac ;
+    --color-third-: #967259 ;
+    --color-forth-: #634832 ;
+    --color-backGround-: #38220f ;
+}
+
+body {
+    background: var(--color-backGround-);
+}
+
+.lay_out {
+    height: 100vh;
+    width:110px;
+    background: var(--color-first-);
+    border-radius: 35px 0 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lay_out .icon {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+}
+
+.lay_out ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.lay_out ul li{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-backGround-);
+    rotate: -90deg;
+    margin: 65px 0;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.lay_out ul li.active {
+    background-color: var(--color-backGround-);
+    color: var(--color-first-);
+    border-radius: 15px;
+}
+
+.cover {
+    background: var(--color-third-);
+    width: 95vw;
+    height: 100vh;
+    border-radius: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cover header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    color: var(--color-backGround-);
+
+}
+
+.cover header h2 {
+    color: var(--color-backGround-);                                                                      font-family: 'Agbalumo', sans-serif;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.cover header .search_bar {
+    width: 550px;
+}
+.cover header .search_bar .search {
+    position: absolute;
+    background-color: var(--color-backGround-);
+    color: var(--color-first-);
+    border-radius: 20px 0 0 20px;
+    /* margin-left: 0.5px; */
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.cover header input {
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    padding: 0 10px;
+    padding-left: 80px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: var(--color-first-);
+}
+
+    
+
+.cover header ul, .cover header p  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cover header p {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+.cover header p:hover{
+    background-color: var(--color-first-);
+    border-radius: 15px;
+}
+
+.cover header ul li {
+    background: var(--color-first-);
+    padding: 5PX;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cover header ul li:hover {
+    background-color: var(--color-backGround-);
+    color: var(--color-first-);
+}
+
+.cover header ul li img {
+    width: 100%;
+}
+
+.cover .right {
+    width: 30%;
+    height: calc(100% - 110px);
+    position: absolute;
+    right: 0;
+    background: var(--color-second-);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 5px 10px 5px var(--color-backGround-);
+    margin: 10px;
+    color: var(--color-backGround-);
+}
+
+.cover .right .up {
+    height: 500px;
+    overflow-y: scroll;
+    scrollbar-color: var(--color-first-);
+}
+.cover .right .up::-webkit-scrollbar  {
+    scrollbar-color: var(--color-first-);
+}
+
+.cover .order-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-forth-);
+}
+
+.up .order-bar p {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.up .order-bar p:hover {
+    color: var(--color-backGround-);
+}
+
+.cover .right .up .order-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 15px; */
+    width: 90%;
+    /* background: var(--color-first-); */
+    margin: 10px 0;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cover .right .up .order-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.cover .right .up .order-card input {
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: #38220f;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.cover .right .down {
+margin: 10px 0;
+}
+
+.cover .right .down .order-bar {
+    border-top: 3px dashed var(--color-backGround-);
+}
+
+.cover .right .down h4 {
+    color: var(--color-forth-);
+    padding: 10px 0;
+}
+
+/* .cover .right .down h4:last-child {
+    border-bottom: 3px dashed var(--color-backGround-);
+}
+
+.cover .right .down h3 {
+    padding: 20px 0;
+    border-top: 3px solid var(--color-backGround-);
+} */
+
+.cover .right .down button {
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: var(--color-backGround-);
+    color: var(--color-first-);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s ;
+    cursor: pointer;
+}
+
+.cover .right .down button:hover {
+    color: var(--color-backGround-);
+    background-color: var(--color-first-);
+}
+
+.cover .left {
+    width: 68%;
+    height: calc(100vh - 110px);
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 5px var(--color-forth-);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    background: var(--color-forth-);
+    overflow-y: scroll;
+    scroll-behavior: smooth;    
+}
+
+.cover .left::-webkit-scrollbar {
+    scrollbar-color: var(--color-first-);
+
+}
+
+.cover .left .card {
+    /* padding: 10px; */
+    overflow: hidden;
+    margin: 5px;
+    background: var(--color-first-);
+    border-radius: 15px;
+    width: 28%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.cover .left .card:hover {
+    box-shadow: 0 2px 50px 1px var(--color-backGround-);
+
+}
+
+.cover .left .card img {
+    width: 100%;
+}
+
+.cover .left .card .name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover .left .card .name-price h3 {
+    font-size: 25px;
+}
+
+.cover .left .card .name-price p {
+    font-size: 25px;
+    color: var(--color-forth-);
+}
+.cover .left .card H3,.cover .left .card p {
+    padding: 10px;
+}
+
